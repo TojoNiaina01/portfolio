@@ -1,11 +1,11 @@
 import React from 'react';
 import ThemeMode from "./components/ThemeMode.jsx";
-import Home from "./page/Home.jsx";
+import Routes from "./routes"
 
 const App = () => {
     return (
         <>
-            <Home/>
+            <Routes/>
             <ThemeMode/>
         </>
     );

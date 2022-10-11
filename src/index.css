@@ -5,13 +5,57 @@
 
 @layer base {
     body {
-        @apply bg-[#dfe4ea] dark:bg-black px-4 py-6 relative transition duration-500
+        @apply relative selection:bg-[#F53D56] selection:text-white
     }
 }
 @layer components {
     .link {
-        @apply dark:text-[#f1f2f6] text-xl tracking-wider font-semibold px-6 decoration-0 pt-6 flex items-center gap-x-2
-        md:text-2xl md:pt-7 md:font-bold
+        @apply text-xl tracking-wider font-semibold px-6 list-none pt-6 flex items-center gap-x-2
+        md:text-2xl md:pt-7 md:font-bold lg:pt-0 lg:text-sm dark:text-white
+    }
+
+    .titre {
+        @apply text-xl font-semibold mt-[20px] dark:text-white
+    }
+
+    .paragraph {
+        @apply mt-[10px] text-gray-700 dark:text-[white]/75 text-left
+    }
+
+    .text {
+        @apply text-[#F53D56]
+    }
+
+    .carte {
+        @apply max-w-[300px] lg:max-w-[250px] rounded-2xl overflow-hidden
+    }
+
+    .grandTitre {
+        @apply text-[1.75rem] font-bold dark:text-white md:text-[2rem] lg:text-[2.75rem] lg:font-[500] text-center
+    }
+
+    .btn {
+        /*@apply bg-[black]/95 text-white px-4 py-2 rounded-3xl text-lg mx-4 font-semibold dark:bg-white dark:text-black*/
+        @apply bg-[black]/95 text-white px-2 py-2 rounded-3xl text-xs mx-2 font-semibold md:text-base md:px-3 lg:text-lg lg:px-4 dark:bg-white dark:text-black
+    }
+
+    .skills {
+        @apply bg-gray-100 px-4 py-4 rounded-full dark:bg-gray-800 transition duration-700
+    }
+
+    .skillsName {
+        @apply text-center pt-1 font-semibold text-gray-700 dark:text-white transition duration-700
+    }
+
+    .borderGradient {
+        text-align: center;
+        padding-bottom: 5px;
+        background: linear-gradient(to right, #F53D56, #f39edc) left bottom no-repeat;
+        background-size: 100% 3px;
+    }
+
+    .tabPanel {
+        @apply grid justify-items-center gap-y-12 grid-cols-1 md:grid-cols-2 lg:grid-cols-4 max-w-[85%] mx-auto
     }
 }
 

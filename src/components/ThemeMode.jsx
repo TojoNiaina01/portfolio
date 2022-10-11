@@ -21,7 +21,6 @@ const ThemeMode = () => {
                     </svg>
                 </button>
             }
-
         </div>
     );
 }
